@@ -12,29 +12,26 @@ const Message = ({message, user}) => {
   console.log(message.timestamp)
 
   return (
-    <Container>
-        <TypeMessage>{message.message}</TypeMessage>
+    <TypeMessage>
+        <Container>{message.message}</Container>
         <Timestamp>
           {message.timestamp ? moment(message.timestamp).format('LT') : '....'}
         </Timestamp>
-    </Container>
+    </TypeMessage>
   )
 }
 
 export default Message
 
-const Container = styled.div`
-  position: relative;
+const Container = styled.p`
+  margin-top: 0;
+  margin-bottom: 4px;
 `;
 
 const MessageE = styled.p`
   width: fit-content;
-  padding: 10px;
-  border-radius: 5px;
-  margin: 10px;
-  min-width: 60px;
-  padding-bottom: 26px;
-  position: relative;
+  padding: 6px 12px;
+  border-radius: 8px;
   text-align: right;
   font-size: 15px;
 `;
@@ -50,12 +47,6 @@ const Reciever = styled(MessageE)`
 
 const Timestamp = styled.span`
   color:gray;
-  /* padding: 10px; */
   font-size: 9px;
-  position: absolute;
-  bottom:0;
   text-align: right;
-  right: 0; 
-  padding-right: 20px;
-  
 `;
