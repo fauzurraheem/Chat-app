@@ -90,7 +90,7 @@ const ChatScreeen = ({messages, chat}) => {
 
         <HeaderInformation>
           <h3>{recipientEmail}</h3>
-          {recipientSnap ? (<p style={{marginTop:0}}>Last Active:{''}{recipient?.lastSeen?.toDate() ? <TimeAgo datetime={recipient?.lastSeen?.toDate()} locale='zh_CN' /> :  "unavailable"}</p>) : (
+          {recipientSnap ? (<p style={{marginTop:0}}>Last Active:{''}{recipient?.lastSeen?.toDate() ? <TimeAgo datetime={recipient?.lastSeen?.toDate()} /> :  "unavailable"}</p>) : (
             <p style={{marginTop:0}}>Loading Last active</p>
           )}
         </HeaderInformation>
