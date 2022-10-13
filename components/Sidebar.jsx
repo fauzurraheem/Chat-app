@@ -79,7 +79,7 @@ export default Sidebar
 
 const Container = styled.div`
   flex: 0.45;
-  border-right: 1px solid whitesmoke;
+  border-right: 1px solid  #0d5850;
   height: 100vh;
   min-width: 300px;
   max-width: 350px;
@@ -122,7 +122,7 @@ const Header = styled.div`
   display: flex;
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: #075E54;
   z-index: 1;
   justify-content: space-between;
   align-items: center;

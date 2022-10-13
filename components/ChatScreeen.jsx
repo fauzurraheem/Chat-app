@@ -120,15 +120,18 @@ const ChatScreeen = ({messages, chat}) => {
 
 export default ChatScreeen
 
-const Container = styled.div``;
+const Container = styled.div`
+  background-color: #075E54;
+`;
 
 const Header = styled.div`
   position: static;
-  background-color: white;
+  background-color: #075E54;
   z-index: 100;
   display: flex;
   padding: 11px;
   height: 80px;
+  color: #d6dad6;
   align-items: center;
   border-bottom: 1px solid whitesmoke;
 
@@ -144,12 +147,13 @@ const HeaderInformation = styled.div`
 
   > p {
     font-size: 14px;
-    color:gray;
+    /* color:whitesmoke; */
   }
 
 `;
 
-const HeaderIcon = styled.div``;
+const HeaderIcon = styled.div`
+`;
 
 const MessageContainer = styled.div`
   padding: 15px;
