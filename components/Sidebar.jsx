@@ -28,14 +28,12 @@ const Sidebar = () => {
       'Please enter an email address for the user you wish to chat with'
     )
     if(!input) return null
-
     if(EmailValidator.validate(input) && !chatExists(input) && input !== user.email){
       //if valide
       const docRef = await addDoc(collection(db, "chats"), {
         users:[user.email, input]
       });
-
-    }
+    
 
   }
 
